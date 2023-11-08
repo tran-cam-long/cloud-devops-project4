@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: backend
+  name: movie-picture-backend
   labels:
-    app: backend
+    app: movie-picture-backend
 spec:
   type: LoadBalancer
   selector:
-    app: backend
+    app: movie-picture-backend
   ports:
     - protocol: TCP
       port: 80
