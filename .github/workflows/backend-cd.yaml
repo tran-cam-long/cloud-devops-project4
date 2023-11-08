@@ -90,7 +90,7 @@ jobs:
 
       - name: Configure kubectl
         run: |
-          aws eks update-kubeconfig --name cluster --region us-east-1
+          aws eks update-kubeconfig --name prj4-cluster --region us-east-1
 
       - name: Set image tag and apply to cluster
         run: |
